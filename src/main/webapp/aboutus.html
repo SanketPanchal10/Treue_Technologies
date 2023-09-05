@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book Store</title>
+
+<style>
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            background-image: url("https://cdn.pixabay.com/photo/2020/05/16/16/43/book-5178205_1280.jpg"); /* Replace 'background.jpg' with your image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100%;
+    		margin: 0;
+    		padding: 0;
+    		display: flex;
+    		flex-direction: column;
+        }
+     /* Header */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+        /* 
+        .logout button{
+        	padding: 10px 30px;
+            font-size: 18px;
+            background-color:grey;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        } */
+        
+        
+.btn
+{
+
+	background-color:grey;
+	border: .2rem solid grey;
+	margin-top: 1rem;
+	display: inline-block;
+	padding: .5rem 2rem;
+	font-size: 1.5rem;
+	border-radius: .5rem;
+	color: white;
+	cursor: pointer;
+	
+}
+        
+        
+        
+         /* About Us */
+        .about-us {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            /* background-color: #fff; */ /* Add a background color for contrast */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for emphasis */
+        }
+
+        .about-us h2 {
+        	color:#FAF9F6;
+            font-size: 34px; /* Increase the font size */
+            margin-bottom: 20px; /* Add more spacing below the heading */
+            
+        }
+         .about-us p {
+         color:black;
+        font-size: 28px; /* Adjust the font size as needed */
+    }
+        .backbutton button{
+        	padding: 10px 20px;
+            font-size: 18px;
+            background-color:black;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+</style>
+
+</head>
+<body>
+<header>
+    <h1>BOOK STORE</h1>
+        <nav>
+            
+            <ul>
+                <li><a href="home.jsp">Home</a></li>
+        		<li><a href="aboutus.html">About Us</a></li>
+                <li><a href="cartlink" id="cart-icon">Cart</a></li>
+                
+            </ul>
+        </nav>
+        
+<!-- <div align="right" class="logout">
+    <a href="home.jsp"><button type="submit">Logout</button></a>
+</div>
+ -->
+<form action="logoutlink" class="logout">
+
+<input type="submit" value="logout" class="btn">
+</form>
+    </header>
+    
+     <div class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to our online book store! We are passionate about providing you with a wide selection of books across various genres. Our goal is to connect readers with their favorite authors and stories. Whether you're a casual reader or a devoted bookworm, we have something for everyone.</p>
+        <p>At our book store, we believe in the power of literature to inspire, educate, and entertain. Our team is dedicated to curating a collection of both timeless classics and the latest bestsellers. We strive to create an enjoyable and seamless shopping experience for book enthusiasts of all ages.</p>
+        <p>Thank you for choosing us as your destination for literary exploration. We're excited to be a part of your reading journey!</p>
+    </div>
+
+<div align="center" class="backbutton">
+    <a href="home.jsp"><button type="submit"><--Back to Home</button></a>
+</div>
+</body>
+</html>
